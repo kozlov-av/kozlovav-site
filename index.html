@@ -60,6 +60,11 @@ section[id] { scroll-margin-top:40px; }
 /* form fields */
 .field { width:100%; padding:10px 2px; background:transparent; border:0; border-radius:0; border-bottom:1px solid #2A2F36; color:#F2F4F6; font-size:14px; outline:none; }
 @media (max-width:768px) { .field { font-size:17px; } }
+
+.more-cases summary::-webkit-details-marker { display:none; }
+.more-cases summary:hover { color:#C3C9CF; }
+.more-cases[open] summary span { transform:rotate(180deg); display:inline-block; }
+  
 </style>
 </head>
 <body>
@@ -135,6 +140,31 @@ section[id] { scroll-margin-top:40px; }
         <p class="mob-17" style="margin:10px 0 0;color:#A0A7AE;font-size:14px;line-height:1.62;max-width:420px">Работают в нём полтора человека, остальные работают как раньше.</p>
       </div>
     </div>
+
+
+    <details class="more-cases" style="margin-top:clamp(30px,4vh,48px)">
+      <summary style="cursor:pointer;color:#8E959C;font-size:14px;list-style:none;display:inline-flex;align-items:center;gap:8px">Есть ещё четыре, а дальше список можете продолжить сами<span style="font-size:11px">▾</span></summary>
+      <div class="grid-2col" style="gap:clamp(30px,4vw,60px) clamp(32px,5vw,80px);margin-top:clamp(28px,4vh,44px)">
+        <div>
+          <div class="mob-17" style="font-size:16px;font-weight:600;line-height:1.35">Отдел продаж живёт своей жизнью.</div>
+          <p class="mob-17" style="margin:10px 0 0;color:#A0A7AE;font-size:14px;line-height:1.62;max-width:420px">Что происходит со сделками, руководитель узнаёт на планёрке со слов менеджеров.</p>
+        </div>
+        <div>
+          <div class="mob-17" style="font-size:16px;font-weight:600;line-height:1.35">Откуда пришли клиенты — никто не считает.</div>
+          <p class="mob-17" style="margin:10px 0 0;color:#A0A7AE;font-size:14px;line-height:1.62;max-width:420px">Выставки, сайт, рекомендации — бюджет распределяется по ощущениям.</p>
+        </div>
+        <div>
+          <div class="mob-17" style="font-size:16px;font-weight:600;line-height:1.35">Половина воронки — мёртвая.</div>
+          <p class="mob-17" style="margin:10px 0 0;color:#A0A7AE;font-size:14px;line-height:1.62;max-width:420px">Сделки висят месяцами, но убрать их некому: вдруг всё-таки купят.</p>
+        </div>
+        <div>
+          <div class="mob-17" style="font-size:16px;font-weight:600;line-height:1.35">Продажи держатся на одном человеке.</div>
+          <p class="mob-17" style="margin:10px 0 0;color:#A0A7AE;font-size:14px;line-height:1.62;max-width:420px">Уйдёт — уйдут клиенты и способ работы вместе с ним.</p>
+        </div>
+      </div>
+    </details>
+
+    
     <p class="mob-17" style="margin:clamp(50px,7vh,90px) 0 0;max-width:700px;font-size:16px;line-height:1.5;font-weight:400;color:#F2F4F6;text-wrap:pretty">Дело не в дисциплине и не в CRM. Это проблема архитектуры: процесс между отделами никто не проектировал — он сложился сам.</p>
   </div>
 </section>
